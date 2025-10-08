@@ -9,10 +9,6 @@ import java.util.Optional;
 
 @Repository
 public interface UserRepository extends JpaRepository<VmsUser, Long> {
-
-    // Login ke liye
     Optional<VmsUser> findByEmailAndPassword(String email, String password);
-
-    // Name ke basis pe search
     List<VmsUser> findByName(String name);
 }
