@@ -25,7 +25,6 @@ public class VmsUser {
     private UserRole role;
     private String phoneNumber;
     private boolean isVerified = false;
-
     @Transient
     private String confirmPassword;
 
